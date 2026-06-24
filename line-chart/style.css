@@ -1,7 +1,7 @@
 body {
-  background: linear-gradient(45deg, #80c8f1, #5f6cf5);
+  background: linear-gradient(45deg, #f5d76c, #ecf56c);
   font-family: 'Helvetica, Arial, sans-serif';
-  min-height: 100vh;
+  min-height: 200vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,8 +9,8 @@ body {
 
 .card {
   width: 100%;
-  max-width: 680px;
-  padding: 15px;
+  max-width: 800px;
+  padding: 30px;
 
   position: relative;
 }
@@ -34,7 +34,7 @@ body {
 
 .card::after {
   z-index: 2;
-  background-color: #ffffff;
+  background-color: #F5F0EB;
 }
 
 .card-content {
