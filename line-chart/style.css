@@ -1,16 +1,16 @@
 body {
-  background: linear-gradient(45deg, #f5d76c, #ecf56c);
+  background: linear-gradient(75deg, #f299ec, #ecf56c);     /* Sets the */
   font-family: 'Helvetica, Arial, sans-serif';
-  min-height: 200vh;
+  min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .card {
-  width: 100%;
-  max-width: 800px;
-  padding: 30px;
+  width: 90%;     /* Sets the width of the background to span the entire horizontal space of its parent container. However, this will not affect a chart unless the chart itself is also styled to fill its container (e.g., width: 100%). */
+  max-width: 700px;   /* Sets the maximum width limit for the card. The card will expand to 100% of its parent on smaller screens but will stop growing once it hits 700px. This ensures the card (and any enclosed chart) does not become too wide on desktop monitors. */
+  padding: 150px;    /* Applies a massive amount of space (150px) to all four sides of the card's content area. This pushes the chart/content inward and significantly expands the size of the background beyond the chart's actual size */
 
   position: relative;
 }
@@ -34,7 +34,7 @@ body {
 
 .card::after {
   z-index: 2;
-  background-color: #F5F0EB;
+  background-color: #F5F0EB;   /* Sets background color of chart #ffffff or #fff shortcode is default white */
 }
 
 .card-content {
